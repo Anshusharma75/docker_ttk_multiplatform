@@ -50,7 +50,7 @@ jobs:
           --build-arg VCS_REF=`git rev-parse --short HEAD`
           --build-arg VCS_URL=`git remote get-url origin`
           --build-arg VERSION="1.0"
-          --build-arg TIMEZONE="Asia/Dhaka"
+          --build-arg TIMEZONE="Asia/kolkata"
           --tag ${{ secrets.DOCKERHUB_USERNAME }}/ttk_multiplatform:$(date +%Y.%j.%H)
           --tag ${{ secrets.DOCKERHUB_USERNAME }}/ttk_multiplatform:latest
           
